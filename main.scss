@@ -1,0 +1,65 @@
+@import 'content';
+@import 'normalize';
+@import 'formalize';
+@import 'variables';
+@import 'header';
+
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+a, p{
+    font-size: $my-font;
+}
+body{
+    background-color: #0E1117
+    ;
+}
+
+
+@media (max-width:1000px) {
+
+
+    .container{
+        display: grid !important;
+       grid-template-columns: 1fr !important;
+    }
+
+
+    .Header-links{
+        display: none;
+    }
+
+    main{
+        display: grid;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    Section{
+        display: grid !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+      
+    }
+
+    .Main-about{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
+
+.js{
+    background-color: yellow !important;
+}
+
